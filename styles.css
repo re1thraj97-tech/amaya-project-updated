@@ -252,7 +252,7 @@ p.body{color:#aab3c1;max-width:62ch;margin-bottom:18px}
 .navcard .n{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--cu-lt);margin-bottom:14px}
 .navcard h3{font-size:1.2rem;font-weight:300;margin-bottom:10px}
 .navcard p{font-size:.9rem;color:var(--muted);margin-bottom:22px}
-.navcard .go{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--cu-lt);display:flex;align-items:center;gap:8px;margin-top:auto}
+.navcard .go{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--cu-lt);display:flex;align-items:center;gap:8px;margin-top:auto}
 .navcard .go::after{content:"";width:7px;height:7px;border-right:1px solid var(--cu-lt);border-top:1px solid var(--cu-lt);transform:rotate(45deg);transition:transform .3s}
 .navcard:hover .go::after{transform:rotate(45deg) translate(3px,-3px)}
 
