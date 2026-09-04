@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://re1thraj97-tech.github.io/amaya-project-updated/sitemap.xml
