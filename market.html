@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Copper Market — Indicative Price per Metric Tonne | AMAYA</title>
+<meta name="description" content="Current indicative copper market reference price per metric tonne in USD, with source and date, plus the electrification and grid demand backdrop for copper exploration in Chile.">
+<meta name="theme-color" content="#07090d">
+<link rel="canonical" href="https://re1thraj97-tech.github.io/amaya-project-updated/market.html">
+<link rel="icon" href="logo.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AMAYA Project">
+<meta property="og:title" content="Copper Market — Indicative Price per Metric Tonne | AMAYA">
+<meta property="og:description" content="Current indicative copper market reference price per metric tonne in USD, with source and date, plus the electrification and grid demand backdrop for copper exploration in Chile.">
+<meta property="og:url" content="https://re1thraj97-tech.github.io/amaya-project-updated/market.html">
+<meta property="og:image" content="https://re1thraj97-tech.github.io/amaya-project-updated/copper-band.jpg">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Copper Market — Indicative Price per Metric Tonne | AMAYA">
+<meta name="twitter:description" content="Current indicative copper market reference price per metric tonne in USD, with source and date, plus the electrification and grid demand backdrop for copper exploration in Chile.">
+<meta name="twitter:image" content="https://re1thraj97-tech.github.io/amaya-project-updated/copper-band.jpg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<canvas id="dust" aria-hidden="true"></canvas>
+<div class="glow" aria-hidden="true"></div>
+<div class="grid" aria-hidden="true"></div>
+<div class="scan" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="cu" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7c898"/><stop offset="35%" stop-color="#f0a868"/>
+      <stop offset="65%" stop-color="#c87533"/><stop offset="100%" stop-color="#7a3f18"/>
+    </linearGradient>
+    <linearGradient id="cu2" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8a4a1e"/><stop offset="50%" stop-color="#c87533"/><stop offset="100%" stop-color="#f7c898"/>
+    </linearGradient>
+    <radialGradient id="core" cx="38%" cy="32%">
+      <stop offset="0%" stop-color="#ffe3c4"/><stop offset="42%" stop-color="#f0a868"/>
+      <stop offset="78%" stop-color="#b9682c"/><stop offset="100%" stop-color="#5e2f10"/>
+    </radialGradient>
+    <linearGradient id="sweepg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4fbfa8" stop-opacity="0"/>
+      <stop offset="72%" stop-color="#4fbfa8" stop-opacity=".13"/>
+      <stop offset="100%" stop-color="#9fffe9" stop-opacity=".45"/>
+    </linearGradient>
+  </defs>
+</svg>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="AMAYA Project — home"><img src="logo.png" alt="AMAYA Project logo" width="110" height="32"><span>Amaya</span></a>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">The Project</a></li>
+      <li><a href="location.html">Location &amp; Logistics</a></li>
+      <li><a href="market.html" aria-current="page">Copper Market</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+  <div id="prog" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+
+  <section class="phead">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html">Amaya</a><span>/</span>Copper Market
+      </nav>
+      <p class="eyebrow rise">03 &mdash; Copper Market</p>
+      <h1 class="rise">Copper Market</h1>
+      <p class="lead rise">Demand for copper is driven by electrification, renewable energy and grid investment &mdash; and new discoveries are needed to meet it.</p>
+    </div>
+  </section>
+
+  <section id="price" aria-labelledby="h2-price">
+    <div class="wrap">
+      <p class="tag rise">Reference price</p>
+      <h2 class="rise" id="h2-price">Current copper market reference.</h2>
+      <div class="market rise">
+        <div>
+          <p style="font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--cu-lt);margin-bottom:16px">Copper market</p>
+          <p class="price">US$ 14,460</p>
+          <p class="price-unit">Per metric tonne</p>
+          <p class="price-meta">Indicative market price &middot; Updated: 4 September 2026</p>
+        </div>
+        <div>
+          <p class="body" style="margin-bottom:14px">An indicative benchmark price for copper on international markets, provided for context only.</p>
+          <p class="src" style="margin-top:0">Approx. US$14,460 per metric tonne, converted from the benchmark quote of approx. US$6.56 per pound as at 4 September 2026 (1 metric tonne = 2,204.62 lb). Source: Trading Economics copper price data; LME Copper is the global benchmark, quoted in US dollars per metric tonne. Copper prices move continuously &mdash; this figure is a snapshot and should be refreshed before use in any presentation.</p>
+        </div>
+      </div>
+      <p class="note-box rise"><strong style="color:var(--txt)">This is a market reference price.</strong> It is not AMAYA&rsquo;s selling price, and AMAYA does not sell copper at this or any stated price. AMAYA is an exploration-stage project with no declared resources, reserves or production.</p>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section aria-labelledby="h2-demand">
+    <div class="wrap">
+      <p class="tag rise">Context</p>
+      <h2 class="rise" id="h2-demand">Copper for a changing world.</h2>
+      <p class="sub rise">Chile is the world&rsquo;s largest copper producer, and the Antofagasta Region hosts several of its largest operations. AMAYA&rsquo;s ground sits within that established belt.</p>
+      <div class="cards">
+        <div class="card rise"><h3>Electrification</h3><p>Copper is the primary conductor in electric vehicles, charging infrastructure and building services.</p></div>
+        <div class="card rise"><h3>Renewable generation</h3><p>Wind and solar installations are materially more copper-intensive per unit of capacity than conventional generation.</p></div>
+        <div class="card rise"><h3>Grid investment</h3><p>Transmission and distribution upgrades require sustained copper supply over long build cycles.</p></div>
+        <div class="card rise"><h3>New discoveries</h3><p>Meeting that demand depends on bringing new deposits forward &mdash; the purpose of exploration projects such as AMAYA.</p></div>
+      </div>
+    </div>
+  </section>
+
+<section style="padding-top:0"><div class="wrap"><div class="pager">
+  <a class="prev" href="location.html"><small>Previous</small><b>Location & Logistics</b></a>
+  <a class="next" href="about.html"><small>Next</small><b>About</b></a>
+</div></div></section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div style="color:var(--txt);margin-bottom:8px">AMAYA Project</div>
+      <div>Copper exploration &middot; Atacama Desert<br>Regi&oacute;n de Antofagasta, Chile</div>
+      <div style="margin-top:14px"><a href="mailto:info@amayaproject.com" style="color:var(--cu-lt)">info@amayaproject.com</a></div>
+    </div>
+    <nav class="foot-links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="project.html">The Project</a>
+        <a href="location.html">Location &amp; Logistics</a>
+        <a href="market.html">Copper Market</a>
+        <a href="about.html">About</a>
+    </nav>
+    <div>&copy; <span id="yr">2026</span> AMAYA Project.<br>All rights reserved.</div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://re1thraj97-tech.github.io/amaya-project-updated/#website",
+      "url": "https://re1thraj97-tech.github.io/amaya-project-updated/",
+      "name": "AMAYA Project",
+      "description": "AMAYA is a copper exploration project in the Atacama Desert, Chile, comprising 9 copper concessions covering 2,353 hectares (5,814 acres).",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://re1thraj97-tech.github.io/amaya-project-updated/#organization",
+      "name": "AMAYA Project",
+      "url": "https://re1thraj97-tech.github.io/amaya-project-updated/",
+      "logo": "https://re1thraj97-tech.github.io/amaya-project-updated/logo.png",
+      "email": "info@amayaproject.com",
+      "description": "Copper exploration project in the Atacama Desert, Región de Antofagasta, Chile.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Región de Antofagasta",
+        "addressCountry": "CL"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://re1thraj97-tech.github.io/amaya-project-updated/market.html#webpage",
+      "url": "https://re1thraj97-tech.github.io/amaya-project-updated/market.html",
+      "name": "Copper Market — Indicative Price per Metric Tonne | AMAYA",
+      "isPartOf": {
+        "@id": "https://re1thraj97-tech.github.io/amaya-project-updated/#website"
+      },
+      "about": {
+        "@id": "https://re1thraj97-tech.github.io/amaya-project-updated/#organization"
+      },
+      "description": "Indicative copper market reference price per metric tonne and the demand context for copper exploration in northern Chile.",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://re1thraj97-tech.github.io/amaya-project-updated/market.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Amaya",
+          "item": "https://re1thraj97-tech.github.io/amaya-project-updated/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Copper Market",
+          "item": "https://re1thraj97-tech.github.io/amaya-project-updated/market.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script src="app.js" defer></script>
+</body>
+</html>
