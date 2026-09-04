@@ -343,6 +343,17 @@ table.data tfoot td:last-child{color:var(--cu-lt);font-size:1.15rem}
 .pending{display:inline-block;margin-top:14px;font-size:10px;letter-spacing:.24em;text-transform:uppercase;
   color:#8891a1;border:1px solid var(--line);border-radius:999px;padding:5px 12px}
 
+/* compact horizontal leadership cards on small screens */
+@media(max-width:640px){
+  .person{display:flex;align-items:stretch}
+  .portrait{width:104px;flex:none;aspect-ratio:auto;border-bottom:0;border-right:1px solid var(--line)}
+  .portrait svg{width:32px;height:32px}
+  .person .info{padding:18px 20px;flex:1;min-width:0}
+  .person h3{font-size:.98rem}
+  .person .role{margin-bottom:8px}
+  .pending{margin-top:10px}
+}
+
 /* geology strata */
 .strata svg{width:100%;height:auto}
 .vein{stroke-dasharray:1200;stroke-dashoffset:1200;transition:stroke-dashoffset 2.4s ease .2s}
