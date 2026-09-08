@@ -33,6 +33,46 @@
     if(img.complete && img.naturalWidth === 0) miss();
   });
 
+  /* ---- optional field video: fall back to the empty-state panel ---- */
+  (function(){
+    var frames = document.querySelectorAll('.vframe');
+    if(!frames.length) return;
+    var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    frames.forEach(function(frame){
+      var v = frame.querySelector('video');
+      if(!v){ frame.setAttribute('data-missing',''); return; }
+
+      function miss(){ frame.setAttribute('data-missing',''); }
+      function ok(){ frame.removeAttribute('data-missing'); }
+      v.addEventListener('error', miss, true);
+      v.addEventListener('loadeddata', ok);
+
+      // The file may not exist yet. Probe it before showing a player.
+      var src = v.querySelector('source[type="video/mp4"]');
+      if(!src){ miss(); return; }
+      miss();
+      fetch(src.getAttribute('src'), {method:'HEAD'})
+        .then(function(r){ if(r.ok){ ok(); v.load(); } })
+        .catch(function(){});
+
+      if(v.hasAttribute('data-auto') && !reduce){
+        v.muted = true; v.setAttribute('playsinline','');
+        if('IntersectionObserver' in window){
+          new IntersectionObserver(function(en){
+            en.forEach(function(e){
+              if(e.isIntersecting){ v.play().catch(function(){}); } else { v.pause(); }
+            });
+          }, {threshold:.25}).observe(v);
+        }
+      }
+    });
+
+    document.addEventListener('visibilitychange', function(){
+      if(document.hidden) document.querySelectorAll('.vframe video[data-auto]').forEach(function(v){ v.pause(); });
+    });
+  })();
+
   /* ---- reveal on scroll ---- */
   var els = document.querySelectorAll('.rise, .stat, .strata');
   if(!('IntersectionObserver' in window)){
