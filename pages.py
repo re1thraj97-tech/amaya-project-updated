@@ -55,7 +55,7 @@ BODIES['index'] = r'''
         <p class="body">AMAYA is a copper exploration project located in the Atacama Desert, Chile. The project comprises 9 copper concessions covering a total area of 2,353 hectares &mdash; approximately 5,814 acres &mdash; at 3,800 metres above sea level, 80 km north of the city of Calama in the Antofagasta Region.</p>
         <p class="body">A first drilling campaign has been completed; its findings are set out on <a href="project.html" style="color:var(--cu-lt);border-bottom:1px solid rgba(240,168,104,.35)">the project page</a>. AMAYA is an exploration-stage project: no mineral resources or mineral reserves have been declared.</p>
         <figure class="media" style="aspect-ratio:16/10;margin-top:14px">
-          <img src="copper-detail.jpg" alt="Detail of raw copper-bearing ore" width="560" height="350" loading="lazy" decoding="async">
+          <img src="copper-detail.jpg" alt="Detail of raw copper-bearing ore" width="560" height="350" loading="eager" decoding="async">
           <figcaption class="cap">Copper mineralisation</figcaption>
         </figure>
       </div>
@@ -77,7 +77,7 @@ BODIES['index'] = r'''
   </section>
 
   <div class="band slot">
-    <img src="ore-macro.jpg" alt="Macro view of chalcopyrite copper sulphide crystals in dark host rock" width="1400" height="781" loading="lazy" decoding="async">
+    <img src="ore-macro.jpg" alt="Macro view of chalcopyrite copper sulphide crystals in dark host rock" width="1400" height="781" loading="eager" decoding="async">
     <div class="veil"></div>
     <div class="band-txt"><p class="big rise"><span class="k">The target</span>A porphyry copper system beneath the Atacama.</p></div>
     <p class="imgnote">Illustrative mineral imagery</p>
@@ -232,7 +232,7 @@ BODIES['project'] = r'''
   </section>
 
   <div class="band slot">
-    <img src="drill-core.jpg" alt="Geological drill core segments laid out in a core tray" width="1400" height="781" loading="lazy" decoding="async">
+    <img src="drill-core.jpg" alt="Geological drill core segments laid out in a core tray" width="1400" height="781" loading="eager" decoding="async">
     <div class="veil"></div>
     <div class="band-txt"><p class="big rise"><span class="k">First drilling campaign</span>Indicating potential for hidden porphyry copper mineralisation.</p></div>
     <p class="imgnote">Illustrative core imagery</p>
@@ -385,22 +385,22 @@ BODIES['mines'] = r'''  <section class="phead">
       </div>
 
       <figure class="mine-hero slot rise">
-        <img src="assets/images/mines/copper/copper-mine-1.jpg" alt="Copper Ore Mine site" width="1400" height="700" loading="lazy" decoding="async">
+        <img src="assets/images/mines/copper/copper-mine-1.jpg" alt="Copper Ore Mine site" width="1400" height="700" loading="eager" decoding="async">
         <div class="ph-note"><span>Awaiting client photography</span><small>Site photography &middot; 2400&times;1200 or wider &middot; JPG</small></div>
       </figure>
 
       <h3 class="gal-h rise">Gallery</h3>
       <div class="gal rise" role="list">
         <button class="gitem slot" type="button" role="listitem" data-full="assets/images/mines/copper/copper-mine-1.jpg" data-cap="Copper Ore Mine &mdash; site view" aria-label="Open larger view: Copper Ore Mine &mdash; site view">
-          <img src="assets/images/mines/copper/copper-mine-1.jpg" alt="Copper Ore Mine &mdash; site view" width="600" height="420" loading="lazy" decoding="async">
+          <img src="assets/images/mines/copper/copper-mine-1.jpg" alt="Copper Ore Mine &mdash; site view" width="600" height="420" loading="eager" decoding="async">
           <span class="ph-mini"><small>Photograph to follow</small></span>
         </button>
         <button class="gitem slot" type="button" role="listitem" data-full="assets/images/mines/copper/copper-mine-2.jpg" data-cap="Copper Ore Mine &mdash; mining operation" aria-label="Open larger view: Copper Ore Mine &mdash; mining operation">
-          <img src="assets/images/mines/copper/copper-mine-2.jpg" alt="Copper Ore Mine &mdash; mining operation" width="600" height="420" loading="lazy" decoding="async">
+          <img src="assets/images/mines/copper/copper-mine-2.jpg" alt="Copper Ore Mine &mdash; mining operation" width="600" height="420" loading="eager" decoding="async">
           <span class="ph-mini"><small>Photograph to follow</small></span>
         </button>
         <button class="gitem slot" type="button" role="listitem" data-full="assets/images/mines/copper/copper-mine-3.jpg" data-cap="Copper Ore Mine &mdash; infrastructure and equipment" aria-label="Open larger view: Copper Ore Mine &mdash; infrastructure and equipment">
-          <img src="assets/images/mines/copper/copper-mine-3.jpg" alt="Copper Ore Mine &mdash; infrastructure and equipment" width="600" height="420" loading="lazy" decoding="async">
+          <img src="assets/images/mines/copper/copper-mine-3.jpg" alt="Copper Ore Mine &mdash; infrastructure and equipment" width="600" height="420" loading="eager" decoding="async">
           <span class="ph-mini"><small>Photograph to follow</small></span>
         </button>
       </div>
@@ -456,22 +456,22 @@ BODIES['mines'] = r'''  <section class="phead">
       </div>
 
       <figure class="mine-hero slot rise">
-        <img src="assets/images/mines/iron/iron-mine-1.jpg" alt="Iron Ore Mine site" width="1400" height="700" loading="lazy" decoding="async">
+        <img src="assets/images/mines/iron/iron-mine-1.jpg" alt="Iron Ore Mine site" width="1400" height="700" loading="eager" decoding="async">
         <div class="ph-note"><span>Awaiting client photography</span><small>Site photography &middot; 2400&times;1200 or wider &middot; JPG</small></div>
       </figure>
 
       <h3 class="gal-h rise">Gallery</h3>
       <div class="gal rise" role="list">
         <button class="gitem slot" type="button" role="listitem" data-full="assets/images/mines/iron/iron-mine-1.jpg" data-cap="Iron Ore Mine &mdash; site view" aria-label="Open larger view: Iron Ore Mine &mdash; site view">
-          <img src="assets/images/mines/iron/iron-mine-1.jpg" alt="Iron Ore Mine &mdash; site view" width="600" height="420" loading="lazy" decoding="async">
+          <img src="assets/images/mines/iron/iron-mine-1.jpg" alt="Iron Ore Mine &mdash; site view" width="600" height="420" loading="eager" decoding="async">
           <span class="ph-mini"><small>Photograph to follow</small></span>
         </button>
         <button class="gitem slot" type="button" role="listitem" data-full="assets/images/mines/iron/iron-mine-2.jpg" data-cap="Iron Ore Mine &mdash; mining operation" aria-label="Open larger view: Iron Ore Mine &mdash; mining operation">
-          <img src="assets/images/mines/iron/iron-mine-2.jpg" alt="Iron Ore Mine &mdash; mining operation" width="600" height="420" loading="lazy" decoding="async">
+          <img src="assets/images/mines/iron/iron-mine-2.jpg" alt="Iron Ore Mine &mdash; mining operation" width="600" height="420" loading="eager" decoding="async">
           <span class="ph-mini"><small>Photograph to follow</small></span>
         </button>
         <button class="gitem slot" type="button" role="listitem" data-full="assets/images/mines/iron/iron-mine-3.jpg" data-cap="Iron Ore Mine &mdash; infrastructure and equipment" aria-label="Open larger view: Iron Ore Mine &mdash; infrastructure and equipment">
-          <img src="assets/images/mines/iron/iron-mine-3.jpg" alt="Iron Ore Mine &mdash; infrastructure and equipment" width="600" height="420" loading="lazy" decoding="async">
+          <img src="assets/images/mines/iron/iron-mine-3.jpg" alt="Iron Ore Mine &mdash; infrastructure and equipment" width="600" height="420" loading="eager" decoding="async">
           <span class="ph-mini"><small>Photograph to follow</small></span>
         </button>
       </div>
@@ -563,7 +563,7 @@ BODIES['location'] = r'''
   </section>
 
   <div class="band slot">
-    <img src="desert-crust.jpg" alt="Cracked high-altitude arid desert ground seen from above" width="1400" height="781" loading="lazy" decoding="async">
+    <img src="desert-crust.jpg" alt="Cracked high-altitude arid desert ground seen from above" width="1400" height="781" loading="eager" decoding="async">
     <div class="veil"></div>
     <div class="band-txt"><p class="big rise"><span class="k">3,800 metres above sea level</span>2,353 hectares across 9 concessions, 80 km north of Calama.</p></div>
     <p class="imgnote">Illustrative terrain imagery</p>
@@ -658,7 +658,7 @@ BODIES['market'] = r'''
         </div>
         <div>
           <figure class="media" style="aspect-ratio:16/9;margin-bottom:20px">
-            <img src="copper-ore-sm.jpg" alt="Copper-bearing ore" width="640" height="360" loading="lazy" decoding="async">
+            <img src="copper-ore-sm.jpg" alt="Copper-bearing ore" width="640" height="360" loading="eager" decoding="async">
             <figcaption class="cap">Copper ore</figcaption>
           </figure>
           <p class="body" style="margin-bottom:14px">An indicative benchmark price for copper on international markets, provided for context only.</p>
@@ -703,7 +703,7 @@ BODIES['leadership'] = r'''  <section class="phead">
       <article class="feature rise">
         <div class="feature-media">
           <div class="portrait portrait-lg">
-            <img src="assets/images/leadership/satish-naidu.jpg" alt="B. Satish Naidu, Chief Executive Officer" width="720" height="900" loading="lazy" decoding="async">
+            <img src="assets/images/leadership/satish-naidu.jpg" alt="B. Satish Naidu, Chief Executive Officer" width="720" height="900" loading="eager" decoding="async">
             <svg viewBox="0 0 48 48" fill="none" stroke="url(#cu)" stroke-width="1.4" aria-hidden="true">
               <circle cx="24" cy="17" r="8"/><path d="M8 42c0-8.8 7.2-14 16-14s16 5.2 16 14"/>
             </svg>
@@ -747,7 +747,7 @@ BODIES['leadership'] = r'''  <section class="phead">
       <div class="people">
         <article class="person rise">
           <div class="portrait">
-            <img src="assets/images/leadership/jitendra-khatwani.jpg" alt="Jitendra Khatwani, Managing Director" loading="lazy" decoding="async">
+            <img src="assets/images/leadership/jitendra-khatwani.jpg" alt="Jitendra Khatwani, Managing Director" loading="eager" decoding="async">
             <svg viewBox="0 0 48 48" fill="none" stroke="url(#cu)" stroke-width="1.4" aria-hidden="true">
               <circle cx="24" cy="17" r="8"/><path d="M8 42c0-8.8 7.2-14 16-14s16 5.2 16 14"/>
             </svg>
@@ -760,7 +760,7 @@ BODIES['leadership'] = r'''  <section class="phead">
         </article>
         <article class="person rise">
           <div class="portrait">
-            <img src="assets/images/leadership/gopal-agrawal.jpg" alt="Gopal Agrawal, Chief Financial Officer" loading="lazy" decoding="async">
+            <img src="assets/images/leadership/gopal-agrawal.jpg" alt="Gopal Agrawal, Chief Financial Officer" loading="eager" decoding="async">
             <svg viewBox="0 0 48 48" fill="none" stroke="url(#cu)" stroke-width="1.4" aria-hidden="true">
               <circle cx="24" cy="17" r="8"/><path d="M8 42c0-8.8 7.2-14 16-14s16 5.2 16 14"/>
             </svg>
@@ -773,7 +773,7 @@ BODIES['leadership'] = r'''  <section class="phead">
         </article>
         <article class="person rise">
           <div class="portrait">
-            <img src="assets/images/leadership/marcelo-astengo-montenegro.jpg" alt="Marcelo Astengo Montenegro, Chief Geologist" loading="lazy" decoding="async">
+            <img src="assets/images/leadership/marcelo-astengo-montenegro.jpg" alt="Marcelo Astengo Montenegro, Chief Geologist" loading="eager" decoding="async">
             <svg viewBox="0 0 48 48" fill="none" stroke="url(#cu)" stroke-width="1.4" aria-hidden="true">
               <circle cx="24" cy="17" r="8"/><path d="M8 42c0-8.8 7.2-14 16-14s16 5.2 16 14"/>
             </svg>
@@ -814,7 +814,7 @@ BODIES['about'] = r'''
   </section>
 
   <div class="band">
-    <img src="copper-band.jpg" alt="Close view of copper-bearing ore" width="1400" height="518" loading="lazy" decoding="async">
+    <img src="copper-band.jpg" alt="Close view of copper-bearing ore" width="1400" height="518" loading="eager" decoding="async">
     <div class="veil"></div>
     <div class="band-txt"><p class="big rise"><span class="k">Responsible exploration</span>Working carefully in one of the driest places on earth.</p></div>
   </div>
