@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Mines — Copper Ore &amp; Iron Ore Mining Assets | AMAYA</title>
+<meta name="description" content="AMAYA holds two mining assets: a copper ore mine and an iron ore mine, both currently in progress. Site galleries, footage and operational detail as the company releases them.">
+<meta name="theme-color" content="#07090d">
+<link rel="canonical" href="https://re1thraj97-tech.github.io/amaya-project-updated/mines.html">
+<link rel="icon" href="logo.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AMAYA Project">
+<meta property="og:title" content="Our Mines — Copper Ore &amp; Iron Ore Mining Assets | AMAYA">
+<meta property="og:description" content="AMAYA holds two mining assets: a copper ore mine and an iron ore mine, both currently in progress. Site galleries, footage and operational detail as the company releases them.">
+<meta property="og:url" content="https://re1thraj97-tech.github.io/amaya-project-updated/mines.html">
+<meta property="og:image" content="https://re1thraj97-tech.github.io/amaya-project-updated/copper-band.jpg">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Our Mines — Copper Ore &amp; Iron Ore Mining Assets | AMAYA">
+<meta name="twitter:description" content="AMAYA holds two mining assets: a copper ore mine and an iron ore mine, both currently in progress. Site galleries, footage and operational detail as the company releases them.">
+<meta name="twitter:image" content="https://re1thraj97-tech.github.io/amaya-project-updated/copper-band.jpg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<canvas id="dust" aria-hidden="true"></canvas>
+<div class="glow" aria-hidden="true"></div>
+<div class="grid" aria-hidden="true"></div>
+<div class="scan" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="cu" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7c898"/><stop offset="35%" stop-color="#f0a868"/>
+      <stop offset="65%" stop-color="#c87533"/><stop offset="100%" stop-color="#7a3f18"/>
+    </linearGradient>
+    <linearGradient id="cu2" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8a4a1e"/><stop offset="50%" stop-color="#c87533"/><stop offset="100%" stop-color="#f7c898"/>
+    </linearGradient>
+    <radialGradient id="core" cx="38%" cy="32%">
+      <stop offset="0%" stop-color="#ffe3c4"/><stop offset="42%" stop-color="#f0a868"/>
+      <stop offset="78%" stop-color="#b9682c"/><stop offset="100%" stop-color="#5e2f10"/>
+    </radialGradient>
+    <linearGradient id="fe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#cfd6df"/><stop offset="40%" stop-color="#93a0b0"/>
+      <stop offset="72%" stop-color="#5d6a7a"/><stop offset="100%" stop-color="#2e3844"/>
+    </linearGradient>
+    <linearGradient id="sweepg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4fbfa8" stop-opacity="0"/>
+      <stop offset="72%" stop-color="#4fbfa8" stop-opacity=".13"/>
+      <stop offset="100%" stop-color="#9fffe9" stop-opacity=".45"/>
+    </linearGradient>
+  </defs>
+</svg>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="AMAYA Project — home"><img src="logo.png" alt="AMAYA Project logo" width="110" height="32"><span>Amaya</span></a>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">The Project</a></li>
+      <li><a href="mines.html" aria-current="page">Our Mines</a></li>
+      <li><a href="location.html">Location</a></li>
+      <li><a href="market.html">Copper Market</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+  <div id="prog" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+  <section class="phead">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html">Amaya</a><span>/</span>Our Mines
+      </nav>
+      <p class="eyebrow rise">02 &mdash; Our Mines</p>
+      <h1 class="rise">Our Mines</h1>
+      <p class="lead rise">The company holds two mining assets &mdash; a copper ore mine and an iron ore mine. Both are currently in progress.</p>
+    </div>
+  </section>
+
+  <div class="stats four" aria-label="Mining assets at a glance">
+    <div class="stat rise"><b data-count="2">0</b><small>Mining assets</small></div>
+    <div class="stat rise"><b class="txt">Cu</b><small>Copper ore mine</small></div>
+    <div class="stat rise"><b class="txt">Fe</b><small>Iron ore mine</small></div>
+    <div class="stat rise"><b class="txt">In progress</b><small>Current status</small></div>
+  </div>
+
+  <section aria-labelledby="h2-intro">
+    <div class="wrap">
+      <p class="tag rise">Mining operations</p>
+      <h2 class="rise" id="h2-intro">Two assets, each with its own page of record.</h2>
+      <p class="sub rise">Each mine below carries its own gallery, site footage and operational detail. Information is published only once the company has supplied it &mdash; nothing on this page is estimated or inferred.</p>
+    </div>
+  </section>
+
+  <section id="copper" class="mine" aria-labelledby="h2-copper">
+    <div class="wrap">
+      <div class="mine-head rise">
+        <span class="mine-ico" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="url(#cu)" stroke-width="1.5"><path d="M24 6l14 9v18l-14 9-14-9V15l14-9z"/><path d="M24 6v18m0 0l14-9M24 24L10 15m14 9v18"/></svg>
+        </span>
+        <div>
+          <p class="tag">Asset 01</p>
+          <h2 id="h2-copper">Copper Ore Mine</h2>
+        </div>
+        <span class="status">In progress</span>
+      </div>
+      <div class="mine-body">
+        <div class="rise">
+          <p class="body">The Copper Ore Mine is one of two mining assets held by the company. Work at the site is currently in progress.</p>
+          <p class="body">Site photography, footage, location detail and operational information are published on this page as the company releases them. No production figures, grades, resources or reserves have been declared for this asset.</p>
+          <div class="btns"><a class="cta" href="about.html#contact">Enquire about this mine</a></div>
+        </div>
+        <dl class="spec rise">
+          <div><dt>Asset</dt><dd>Copper Ore Mine</dd></div>
+          <div><dt>Commodity</dt><dd>Copper ore</dd></div>
+          <div><dt>Status</dt><dd>In progress</dd></div>
+          <div><dt>Location</dt><dd class="pend">Awaiting client information</dd></div>
+          <div><dt>Operation type</dt><dd class="pend">Awaiting client information</dd></div>
+          <div><dt>Infrastructure</dt><dd class="pend">Awaiting client information</dd></div>
+        </dl>
+      </div>
+
+      <figure class="mine-hero slot rise">
+        <img src="assets/images/mines/copper/copper-mine-1.jpg" alt="Copper Ore Mine site" width="1400" height="700" loading="lazy" decoding="async">
+        <div class="ph-note"><span>Awaiting client photography</span><small>assets/images/mines/copper/copper-mine-1.jpg &middot; 2400&times;1200 or wider &middot; JPG</small></div>
+      </figure>
+
+      <h3 class="gal-h rise">Gallery</h3>
+      <div class="gal rise" role="list">
+        <button class="gitem slot" type="button" role="listitem" data-full="assets/images/mines/copper/copper-mine-1.jpg" data-cap="Copper Ore Mine &mdash; site view" aria-label="Open larger view: Copper Ore Mine &mdash; site view">
+          <img src="assets/images/mines/copper/copper-mine-1.jpg" alt="Copper Ore Mine &mdash; site view" width="600" height="420" loading="lazy" decoding="async">
+          <span class="ph-mini"><small>copper-mine-1.jpg</small></span>
+        </button>
+        <button class="gitem slot" type="button" role="listitem" data-full="assets/images/mines/copper/copper-mine-2.jpg" data-cap="Copper Ore Mine &mdash; mining operation" aria-label="Open larger view: Copper Ore Mine &mdash; mining operation">
+          <img src="assets/images/mines/copper/copper-mine-2.jpg" alt="Copper Ore Mine &mdash; mining operation" width="600" height="420" loading="lazy" decoding="async">
+          <span class="ph-mini"><small>copper-mine-2.jpg</small></span>
+        </button>
+        <button class="gitem slot" type="button" role="listitem" data-full="assets/images/mines/copper/copper-mine-3.jpg" data-cap="Copper Ore Mine &mdash; infrastructure and equipment" aria-label="Open larger view: Copper Ore Mine &mdash; infrastructure and equipment">
+          <img src="assets/images/mines/copper/copper-mine-3.jpg" alt="Copper Ore Mine &mdash; infrastructure and equipment" width="600" height="420" loading="lazy" decoding="async">
+          <span class="ph-mini"><small>copper-mine-3.jpg</small></span>
+        </button>
+      </div>
+      <p class="src rise">Photographs are supplied by the company. A slot with no image yet stays empty rather than showing a broken image.</p>
+
+      <h3 class="gal-h rise">Site footage</h3>
+      <figure class="vfig rise">
+        <div class="vframe">
+          <video preload="none" playsinline controls poster="assets/videos/mines/copper/copper-mine-poster.jpg" aria-label="Copper Ore Mine &mdash; site footage">
+            <source src="assets/videos/mines/copper/copper-mine-video.webm" type="video/webm">
+            <source src="assets/videos/mines/copper/copper-mine-video.mp4" type="video/mp4">
+          </video>
+          <div class="vph">
+            <svg class="vico" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="4" y="11" width="30" height="26" rx="4" stroke="#c87533" stroke-width="1.4"/><path d="M34 21l10-6v18l-10-6z" stroke="#c87533" stroke-width="1.4" stroke-linejoin="round"/><circle cx="19" cy="24" r="5" stroke="#8c95a6" stroke-width="1.2"/></svg>
+            <span class="vlabel">Awaiting client footage</span>
+            <span class="vhint">Copper Ore Mine &mdash; site footage</span>
+            <span class="vspec">assets/videos/mines/copper/copper-mine-video.mp4 (+ .webm) &middot; 1920&times;1080 &middot; 16:9</span>
+          </div>
+        </div>
+        <figcaption class="vcap">Copper Ore Mine &middot; recorded on site</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="iron" class="mine" aria-labelledby="h2-iron">
+    <div class="wrap">
+      <div class="mine-head rise">
+        <span class="mine-ico" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="url(#fe)" stroke-width="1.5"><path d="M8 36l10-22 10 14 6-8 6 16z"/><path d="M8 36h32"/></svg>
+        </span>
+        <div>
+          <p class="tag">Asset 02</p>
+          <h2 id="h2-iron">Iron Ore Mine</h2>
+        </div>
+        <span class="status">In progress</span>
+      </div>
+      <div class="mine-body">
+        <div class="rise">
+          <p class="body">The Iron Ore Mine is the company&rsquo;s second mining asset. Work at the site is currently in progress.</p>
+          <p class="body">Site photography, footage, location detail and operational information are published on this page as the company releases them. No production figures, grades, resources or reserves have been declared for this asset.</p>
+          <div class="btns"><a class="cta" href="about.html#contact">Enquire about this mine</a></div>
+        </div>
+        <dl class="spec rise">
+          <div><dt>Asset</dt><dd>Iron Ore Mine</dd></div>
+          <div><dt>Commodity</dt><dd>Iron ore</dd></div>
+          <div><dt>Status</dt><dd>In progress</dd></div>
+          <div><dt>Location</dt><dd class="pend">Awaiting client information</dd></div>
+          <div><dt>Operation type</dt><dd class="pend">Awaiting client information</dd></div>
+          <div><dt>Infrastructure</dt><dd class="pend">Awaiting client information</dd></div>
+        </dl>
+      </div>
+
+      <figure class="mine-hero slot rise">
+        <img src="assets/images/mines/iron/iron-mine-1.jpg" alt="Iron Ore Mine site" width="1400" height="700" loading="lazy" decoding="async">
+        <div class="ph-note"><span>Awaiting client photography</span><small>assets/images/mines/iron/iron-mine-1.jpg &middot; 2400&times;1200 or wider &middot; JPG</small></div>
+      </figure>
+
+      <h3 class="gal-h rise">Gallery</h3>
+      <div class="gal rise" role="list">
+        <button class="gitem slot" type="button" role="listitem" data-full="assets/images/mines/iron/iron-mine-1.jpg" data-cap="Iron Ore Mine &mdash; site view" aria-label="Open larger view: Iron Ore Mine &mdash; site view">
+          <img src="assets/images/mines/iron/iron-mine-1.jpg" alt="Iron Ore Mine &mdash; site view" width="600" height="420" loading="lazy" decoding="async">
+          <span class="ph-mini"><small>iron-mine-1.jpg</small></span>
+        </button>
+        <button class="gitem slot" type="button" role="listitem" data-full="assets/images/mines/iron/iron-mine-2.jpg" data-cap="Iron Ore Mine &mdash; mining operation" aria-label="Open larger view: Iron Ore Mine &mdash; mining operation">
+          <img src="assets/images/mines/iron/iron-mine-2.jpg" alt="Iron Ore Mine &mdash; mining operation" width="600" height="420" loading="lazy" decoding="async">
+          <span class="ph-mini"><small>iron-mine-2.jpg</small></span>
+        </button>
+        <button class="gitem slot" type="button" role="listitem" data-full="assets/images/mines/iron/iron-mine-3.jpg" data-cap="Iron Ore Mine &mdash; infrastructure and equipment" aria-label="Open larger view: Iron Ore Mine &mdash; infrastructure and equipment">
+          <img src="assets/images/mines/iron/iron-mine-3.jpg" alt="Iron Ore Mine &mdash; infrastructure and equipment" width="600" height="420" loading="lazy" decoding="async">
+          <span class="ph-mini"><small>iron-mine-3.jpg</small></span>
+        </button>
+      </div>
+      <p class="src rise">Photographs are supplied by the company. A slot with no image yet stays empty rather than showing a broken image.</p>
+
+      <h3 class="gal-h rise">Site footage</h3>
+      <figure class="vfig rise">
+        <div class="vframe">
+          <video preload="none" playsinline controls poster="assets/videos/mines/iron/iron-mine-poster.jpg" aria-label="Iron Ore Mine &mdash; site footage">
+            <source src="assets/videos/mines/iron/iron-mine-video.webm" type="video/webm">
+            <source src="assets/videos/mines/iron/iron-mine-video.mp4" type="video/mp4">
+          </video>
+          <div class="vph">
+            <svg class="vico" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="4" y="11" width="30" height="26" rx="4" stroke="#c87533" stroke-width="1.4"/><path d="M34 21l10-6v18l-10-6z" stroke="#c87533" stroke-width="1.4" stroke-linejoin="round"/><circle cx="19" cy="24" r="5" stroke="#8c95a6" stroke-width="1.2"/></svg>
+            <span class="vlabel">Awaiting client footage</span>
+            <span class="vhint">Iron Ore Mine &mdash; site footage</span>
+            <span class="vspec">assets/videos/mines/iron/iron-mine-video.mp4 (+ .webm) &middot; 1920&times;1080 &middot; 16:9</span>
+          </div>
+        </div>
+        <figcaption class="vcap">Iron Ore Mine &middot; recorded on site</figcaption>
+      </figure>
+    </div>
+  </section>
+
+<section style="padding-top:0"><div class="wrap"><div class="pager">
+  <a class="prev" href="project.html"><small>Previous</small><b>The Project</b></a>
+  <a class="next" href="location.html"><small>Next</small><b>Location & Logistics</b></a>
+</div></div></section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div style="color:var(--txt);margin-bottom:8px">AMAYA Project</div>
+      <div>Copper exploration &middot; Atacama Desert<br>Regi&oacute;n de Antofagasta, Chile</div>
+      <div style="margin-top:14px"><a href="mailto:info@amayaproject.com" style="color:var(--cu-lt)">info@amayaproject.com</a></div>
+    </div>
+    <nav class="foot-links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="project.html">The Project</a>
+        <a href="mines.html">Our Mines</a>
+        <a href="location.html">Location &amp; Logistics</a>
+        <a href="market.html">Copper Market</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="about.html">About</a>
+    </nav>
+    <div>&copy; <span id="yr">2026</span> AMAYA Project.<br>All rights reserved.</div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://re1thraj97-tech.github.io/amaya-project-updated/#website",
+      "url": "https://re1thraj97-tech.github.io/amaya-project-updated/",
+      "name": "AMAYA Project",
+      "description": "AMAYA is a copper exploration project in the Atacama Desert, Chile, comprising 9 copper concessions covering 2,353 hectares (5,814 acres).",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://re1thraj97-tech.github.io/amaya-project-updated/#organization",
+      "name": "AMAYA Project",
+      "url": "https://re1thraj97-tech.github.io/amaya-project-updated/",
+      "logo": "https://re1thraj97-tech.github.io/amaya-project-updated/logo.png",
+      "email": "info@amayaproject.com",
+      "description": "Copper exploration project in the Atacama Desert, Región de Antofagasta, Chile.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Región de Antofagasta",
+        "addressCountry": "CL"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://re1thraj97-tech.github.io/amaya-project-updated/mines.html#webpage",
+      "url": "https://re1thraj97-tech.github.io/amaya-project-updated/mines.html",
+      "name": "Our Mines — Copper Ore & Iron Ore Mining Assets | AMAYA",
+      "isPartOf": {
+        "@id": "https://re1thraj97-tech.github.io/amaya-project-updated/#website"
+      },
+      "about": {
+        "@id": "https://re1thraj97-tech.github.io/amaya-project-updated/#organization"
+      },
+      "description": "AMAYA's mining assets comprise a copper ore mine and an iron ore mine, both currently in progress.",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://re1thraj97-tech.github.io/amaya-project-updated/mines.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Amaya",
+          "item": "https://re1thraj97-tech.github.io/amaya-project-updated/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Our Mines",
+          "item": "https://re1thraj97-tech.github.io/amaya-project-updated/mines.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script src="app.js" defer></script>
+</body>
+</html>
