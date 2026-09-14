@@ -386,22 +386,22 @@ BODIES['mines'] = r'''  <section class="phead">
 
       <figure class="mine-hero slot rise">
         <img src="assets/images/mines/copper/copper-mine-1.jpg" alt="Copper Ore Mine site" width="1400" height="700" loading="lazy" decoding="async">
-        <div class="ph-note"><span>Awaiting client photography</span><small>assets/images/mines/copper/copper-mine-1.jpg &middot; 2400&times;1200 or wider &middot; JPG</small></div>
+        <div class="ph-note"><span>Awaiting client photography</span><small>Site photography &middot; 2400&times;1200 or wider &middot; JPG</small></div>
       </figure>
 
       <h3 class="gal-h rise">Gallery</h3>
       <div class="gal rise" role="list">
         <button class="gitem slot" type="button" role="listitem" data-full="assets/images/mines/copper/copper-mine-1.jpg" data-cap="Copper Ore Mine &mdash; site view" aria-label="Open larger view: Copper Ore Mine &mdash; site view">
           <img src="assets/images/mines/copper/copper-mine-1.jpg" alt="Copper Ore Mine &mdash; site view" width="600" height="420" loading="lazy" decoding="async">
-          <span class="ph-mini"><small>copper-mine-1.jpg</small></span>
+          <span class="ph-mini"><small>Photograph to follow</small></span>
         </button>
         <button class="gitem slot" type="button" role="listitem" data-full="assets/images/mines/copper/copper-mine-2.jpg" data-cap="Copper Ore Mine &mdash; mining operation" aria-label="Open larger view: Copper Ore Mine &mdash; mining operation">
           <img src="assets/images/mines/copper/copper-mine-2.jpg" alt="Copper Ore Mine &mdash; mining operation" width="600" height="420" loading="lazy" decoding="async">
-          <span class="ph-mini"><small>copper-mine-2.jpg</small></span>
+          <span class="ph-mini"><small>Photograph to follow</small></span>
         </button>
         <button class="gitem slot" type="button" role="listitem" data-full="assets/images/mines/copper/copper-mine-3.jpg" data-cap="Copper Ore Mine &mdash; infrastructure and equipment" aria-label="Open larger view: Copper Ore Mine &mdash; infrastructure and equipment">
           <img src="assets/images/mines/copper/copper-mine-3.jpg" alt="Copper Ore Mine &mdash; infrastructure and equipment" width="600" height="420" loading="lazy" decoding="async">
-          <span class="ph-mini"><small>copper-mine-3.jpg</small></span>
+          <span class="ph-mini"><small>Photograph to follow</small></span>
         </button>
       </div>
       <p class="src rise">Photographs are supplied by the company. A slot with no image yet stays empty rather than showing a broken image.</p>
@@ -417,7 +417,7 @@ BODIES['mines'] = r'''  <section class="phead">
             <svg class="vico" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="4" y="11" width="30" height="26" rx="4" stroke="#c87533" stroke-width="1.4"/><path d="M34 21l10-6v18l-10-6z" stroke="#c87533" stroke-width="1.4" stroke-linejoin="round"/><circle cx="19" cy="24" r="5" stroke="#8c95a6" stroke-width="1.2"/></svg>
             <span class="vlabel">Awaiting client footage</span>
             <span class="vhint">Copper Ore Mine &mdash; site footage</span>
-            <span class="vspec">assets/videos/mines/copper/copper-mine-video.mp4 (+ .webm) &middot; 1920&times;1080 &middot; 16:9</span>
+            <span class="vspec">MP4 + WebM &middot; 1920&times;1080 &middot; 16:9</span>
           </div>
         </div>
         <figcaption class="vcap">Copper Ore Mine &middot; recorded on site</figcaption>
@@ -457,22 +457,22 @@ BODIES['mines'] = r'''  <section class="phead">
 
       <figure class="mine-hero slot rise">
         <img src="assets/images/mines/iron/iron-mine-1.jpg" alt="Iron Ore Mine site" width="1400" height="700" loading="lazy" decoding="async">
-        <div class="ph-note"><span>Awaiting client photography</span><small>assets/images/mines/iron/iron-mine-1.jpg &middot; 2400&times;1200 or wider &middot; JPG</small></div>
+        <div class="ph-note"><span>Awaiting client photography</span><small>Site photography &middot; 2400&times;1200 or wider &middot; JPG</small></div>
       </figure>
 
       <h3 class="gal-h rise">Gallery</h3>
       <div class="gal rise" role="list">
         <button class="gitem slot" type="button" role="listitem" data-full="assets/images/mines/iron/iron-mine-1.jpg" data-cap="Iron Ore Mine &mdash; site view" aria-label="Open larger view: Iron Ore Mine &mdash; site view">
           <img src="assets/images/mines/iron/iron-mine-1.jpg" alt="Iron Ore Mine &mdash; site view" width="600" height="420" loading="lazy" decoding="async">
-          <span class="ph-mini"><small>iron-mine-1.jpg</small></span>
+          <span class="ph-mini"><small>Photograph to follow</small></span>
         </button>
         <button class="gitem slot" type="button" role="listitem" data-full="assets/images/mines/iron/iron-mine-2.jpg" data-cap="Iron Ore Mine &mdash; mining operation" aria-label="Open larger view: Iron Ore Mine &mdash; mining operation">
           <img src="assets/images/mines/iron/iron-mine-2.jpg" alt="Iron Ore Mine &mdash; mining operation" width="600" height="420" loading="lazy" decoding="async">
-          <span class="ph-mini"><small>iron-mine-2.jpg</small></span>
+          <span class="ph-mini"><small>Photograph to follow</small></span>
         </button>
         <button class="gitem slot" type="button" role="listitem" data-full="assets/images/mines/iron/iron-mine-3.jpg" data-cap="Iron Ore Mine &mdash; infrastructure and equipment" aria-label="Open larger view: Iron Ore Mine &mdash; infrastructure and equipment">
           <img src="assets/images/mines/iron/iron-mine-3.jpg" alt="Iron Ore Mine &mdash; infrastructure and equipment" width="600" height="420" loading="lazy" decoding="async">
-          <span class="ph-mini"><small>iron-mine-3.jpg</small></span>
+          <span class="ph-mini"><small>Photograph to follow</small></span>
         </button>
       </div>
       <p class="src rise">Photographs are supplied by the company. A slot with no image yet stays empty rather than showing a broken image.</p>
@@ -488,7 +488,7 @@ BODIES['mines'] = r'''  <section class="phead">
             <svg class="vico" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="4" y="11" width="30" height="26" rx="4" stroke="#c87533" stroke-width="1.4"/><path d="M34 21l10-6v18l-10-6z" stroke="#c87533" stroke-width="1.4" stroke-linejoin="round"/><circle cx="19" cy="24" r="5" stroke="#8c95a6" stroke-width="1.2"/></svg>
             <span class="vlabel">Awaiting client footage</span>
             <span class="vhint">Iron Ore Mine &mdash; site footage</span>
-            <span class="vspec">assets/videos/mines/iron/iron-mine-video.mp4 (+ .webm) &middot; 1920&times;1080 &middot; 16:9</span>
+            <span class="vspec">MP4 + WebM &middot; 1920&times;1080 &middot; 16:9</span>
           </div>
         </div>
         <figcaption class="vcap">Iron Ore Mine &middot; recorded on site</figcaption>
@@ -708,7 +708,6 @@ BODIES['leadership'] = r'''  <section class="phead">
               <circle cx="24" cy="17" r="8"/><path d="M8 42c0-8.8 7.2-14 16-14s16 5.2 16 14"/>
             </svg>
           </div>
-          <p class="ph-cap">Photograph: assets/images/leadership/satish-naidu.jpg</p>
         </div>
         <div class="feature-body">
           <h2 id="h2-ceo">B. Satish Naidu</h2>
