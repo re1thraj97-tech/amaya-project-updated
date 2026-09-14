@@ -455,3 +455,119 @@ footer{border-top:1px solid var(--line);padding:46px 0;color:var(--muted);font-s
   box-shadow:inset 0 0 0 1px rgba(200,117,51,.12);
 }
 @media(prefers-reduced-motion:reduce){.vframe video{animation:none}}
+
+/* ===== nav breathing room for the seven-item menu ===== */
+@media(min-width:1001px) and (max-width:1180px){.nav ul{gap:22px;font-size:11px}}
+
+/* ===== logistics: four access cards ===== */
+@media(min-width:821px){.logi{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1100px){.logi{grid-template-columns:repeat(4,1fr)}.logi .card{padding:28px 22px}}
+
+/* ===== homepage mining-asset cards ===== */
+.minecards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:10px}
+.minecard{
+  display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;padding:32px 28px;
+  background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,0));
+  transition:border-color .35s,transform .35s,background .35s;
+}
+.minecard:hover{border-color:rgba(200,117,51,.5);transform:translateY(-5px);background:linear-gradient(180deg,rgba(200,117,51,.10),rgba(255,255,255,0))}
+.minecard .mc-ico{display:block;width:44px;height:44px;margin-bottom:18px}
+.minecard .mc-ico svg{width:100%;height:100%}
+.minecard h3{font-size:1.12rem;margin-bottom:10px}
+.minecard p{font-size:.9rem;color:var(--muted);flex:1}
+
+/* ===== mine sections ===== */
+.mine-head{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:26px}
+.mine-head .mine-ico{width:52px;height:52px;flex:none}
+.mine-head .mine-ico svg{width:100%;height:100%}
+.mine-head h2{margin:0}
+.mine-head .tag{margin-bottom:4px}
+.mine-head .status{
+  margin-left:auto;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--cu-lt);
+  border:1px solid rgba(200,117,51,.42);border-radius:999px;padding:7px 15px;white-space:nowrap;
+}
+.mine-body{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:start}
+@media(max-width:860px){.mine-body{grid-template-columns:1fr;gap:30px}.mine-head .status{margin-left:0}}
+.spec dd.pend{color:#7c8595;font-style:italic}
+
+.mine-hero{
+  position:relative;margin:34px 0 0;border-radius:18px;overflow:hidden;border:1px solid var(--line);
+  aspect-ratio:2/1;display:grid;place-items:center;
+}
+.mine-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.mine-hero .ph-note{position:relative;text-align:center;padding:24px;display:flex;flex-direction:column;gap:8px}
+.mine-hero img:not([data-missing]) ~ .ph-note{display:none}
+.ph-note span{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--cu-lt)}
+.ph-note small{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;color:#6f7889}
+@media(max-width:640px){.mine-hero{aspect-ratio:4/3}}
+
+.gal-h,.mini-h{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--cu-lt);margin:38px 0 16px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:720px){.gal{grid-template-columns:1fr 1fr;gap:12px}}
+.gitem{
+  position:relative;display:block;padding:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;
+  aspect-ratio:3/2;cursor:pointer;background:linear-gradient(135deg,#0f141d,#0a0e15);
+  transition:border-color .35s,transform .35s;
+}
+.gitem:hover{border-color:rgba(200,117,51,.5);transform:translateY(-3px)}
+.gitem:focus-visible{outline:2px solid var(--cu-lt);outline-offset:3px}
+.gitem img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gitem:hover img{transform:scale(1.05)}
+.gitem .ph-mini{position:absolute;inset:0;display:grid;place-items:center;padding:12px;text-align:center}
+.gitem img:not([data-missing]) ~ .ph-mini{display:none}
+.gitem .ph-mini small{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;color:#6f7889;letter-spacing:.04em}
+
+/* ===== lightbox ===== */
+.lbox{
+  position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:5vmin;
+  background:rgba(4,6,9,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+}
+.lbox[open],.lbox.on{display:flex}
+.lbox img{max-width:100%;max-height:82vh;border-radius:10px;border:1px solid var(--line-2);object-fit:contain}
+.lbox figcaption{margin-top:14px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:center}
+.lbox figure{margin:0;display:flex;flex-direction:column;align-items:center;max-width:1200px}
+.lbox .lclose{
+  position:absolute;top:18px;right:18px;width:44px;height:44px;border-radius:12px;cursor:pointer;
+  border:1px solid var(--line-2);background:rgba(255,255,255,.04);color:#fff;font-size:20px;line-height:1;
+}
+.lbox .lclose:hover{border-color:rgba(200,117,51,.55)}
+.lbox .lnav{
+  position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;cursor:pointer;
+  border:1px solid var(--line-2);background:rgba(255,255,255,.04);color:#fff;font-size:18px;line-height:1;
+}
+.lbox .lprev{left:14px}.lbox .lnext{right:14px}
+.lbox .lnav:hover{border-color:rgba(200,117,51,.55)}
+@media(max-width:640px){.lbox .lnav{width:40px;height:40px}}
+
+/* ===== featured leadership profile ===== */
+.feature{display:grid;grid-template-columns:.8fr 1.2fr;gap:46px;align-items:start;margin-top:10px}
+@media(max-width:900px){.feature{grid-template-columns:1fr;gap:28px}}
+.portrait-lg{aspect-ratio:4/5;border-radius:18px;overflow:hidden;border:1px solid var(--line);border-bottom:1px solid var(--line)}
+.portrait-lg svg{width:82px;height:82px}
+.ph-cap{margin-top:10px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;color:#6f7889;letter-spacing:.04em;word-break:break-all}
+.feature-body h2{font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:8px}
+.role-lg{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--cu-lt);margin-bottom:22px}
+.feature-body .body + .body{margin-top:14px}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:10px;padding:0}
+.chips li{
+  font-size:11px;letter-spacing:.1em;color:var(--muted);border:1px solid var(--line);
+  border-radius:999px;padding:8px 14px;background:rgba(255,255,255,.02);
+}
+.plain-chips li{border-style:dashed}
+
+/* text-only stat tiles */
+.stat b.txt{font-size:clamp(1.1rem,2.4vw,1.7rem);letter-spacing:.02em}
+
+/* four-tile stat band (mines) — explicit columns, no empty cell */
+.stats.four{grid-template-columns:repeat(4,1fr)}
+@media(max-width:1000px){.stats.four{grid-template-columns:repeat(2,1fr)}.stats.four .stat:last-child{grid-column:auto}}
+@media(max-width:640px){.stats.four{grid-template-columns:repeat(2,1fr)}.stats.four .stat:last-child{grid-column:auto}}
+
+/* filename hints disappear once the photograph is supplied */
+.feature-media:has(img:not([data-missing])) .ph-cap{display:none}
+
+/* featured portrait must not inherit the compact card portrait rules */
+@media(max-width:640px){
+  .portrait-lg{width:100%;max-width:320px;aspect-ratio:4/5;border:1px solid var(--line);border-right:1px solid var(--line)}
+  .portrait-lg svg{width:64px;height:64px}
+}
