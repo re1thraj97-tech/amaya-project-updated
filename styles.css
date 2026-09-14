@@ -571,3 +571,6 @@ footer{border-top:1px solid var(--line);padding:46px 0;color:var(--muted);font-s
   .portrait-lg{width:100%;max-width:320px;aspect-ratio:4/5;border:1px solid var(--line);border-right:1px solid var(--line)}
   .portrait-lg svg{width:64px;height:64px}
 }
+
+/* gallery: three tiles in a two-column grid — the last one spans, no empty cell */
+@media(max-width:720px){.gal .gitem:last-child{grid-column:1 / -1;aspect-ratio:2/1}}
