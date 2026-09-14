@@ -1,5 +1,13 @@
 (function(){
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* shared scroll-activity flag: decorative animation stands down while the
+     user is scrolling, so the main thread is free for scroll and paint */
+  var scrolling = false, scrollIdle;
+  addEventListener('scroll', function(){
+    scrolling = true;
+    clearTimeout(scrollIdle);
+    scrollIdle = setTimeout(function(){ scrolling = false; }, 140);
+  }, {passive:true});
   var yr = document.getElementById('yr');
   if(yr) yr.textContent = new Date().getFullYear();
 
@@ -144,7 +152,10 @@
     var cv = document.getElementById('terrain');
     if(!cv) return;
     var ctx = cv.getContext('2d'), W = cv.width, H = cv.height;
-    var COLS = 46, ROWS = 30;
+    /* the canvas is drawn at a fixed 760x470 and scaled down by CSS, so a
+       phone gains nothing from the full mesh - halve it there */
+    var light = innerWidth < 900 || matchMedia('(pointer:coarse)').matches;
+    var COLS = light ? 28 : 46, ROWS = light ? 18 : 30;
     var HORIZON = -43, SPREAD = W*0.70, DEPTH = 483, EV = 110;
     var ANOM = {x:0.10, z:0.44}, LIFT = -118;
     var t = 0, raf = null, running = false;
@@ -230,7 +241,14 @@
       hz.addColorStop(1,'rgba(7,10,14,0)');
       ctx.fillStyle = hz; ctx.fillRect(0,0,W,96);
     }
-    function loop(){ t += 0.016; draw(); raf = requestAnimationFrame(loop); }
+    var lastT = 0;
+    function loop(now){
+      raf = requestAnimationFrame(loop);
+      if(now - lastT < (light ? 50 : 33)) return;   /* 20fps on phones, 30 on desktop */
+      lastT = now;
+      if(scrolling) return;                    /* yield while scrolling */
+      t += (light ? 0.05 : 0.033); draw();
+    }
     function start(){ if(!running && !reduce){ running = true; loop(); } }
     function stop(){ running = false; cancelAnimationFrame(raf); }
     draw();
@@ -245,7 +263,7 @@
   var cv = document.getElementById('dust');
   if(!cv) return;
   if(reduce){ cv.style.display='none'; return; }
-  var ctx = cv.getContext('2d'), dpr = Math.min(devicePixelRatio||1, 1.5), ps = [], W, H, raf, visible = true;
+  var ctx = cv.getContext('2d'), dpr = 1, ps = [], W, H, raf, visible = true, lastD = 0;
   function size(){
     W = cv.width  = innerWidth*dpr; H = cv.height = innerHeight*dpr;
     cv.style.width = innerWidth+'px'; cv.style.height = innerHeight+'px';
@@ -257,7 +275,11 @@
       a:Math.random()*.5+.15
     });
   }
-  function drawDust(){
+  function drawDust(now){
+    raf = requestAnimationFrame(drawDust);
+    if(now && now - lastD < 33) return;        /* ~30fps */
+    lastD = now;
+    if(scrolling) return;                      /* yield while scrolling */
     ctx.clearRect(0,0,W,H);
     for(var i=0;i<ps.length;i++){
       var p = ps[i];
@@ -267,14 +289,13 @@
       ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,6.283);
       ctx.fillStyle = 'rgba(240,168,104,'+p.a+')'; ctx.fill();
     }
-    raf = requestAnimationFrame(drawDust);
   }
   var rt; addEventListener('resize',function(){ clearTimeout(rt); rt = setTimeout(size,200); },{passive:true});
   document.addEventListener('visibilitychange',function(){
     if(document.hidden){ cancelAnimationFrame(raf); visible=false; }
     else if(!visible){ visible=true; drawDust(); }
   });
-  size(); drawDust();
+  size(); raf = requestAnimationFrame(drawDust);
 })();
 
 /* ===== gallery lightbox ===== */
