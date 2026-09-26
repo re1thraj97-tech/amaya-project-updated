@@ -20,8 +20,8 @@ BODIES['index'] = r'''
         <p class="hero-sub rise">Copper Exploration Project &middot; Atacama Desert, Chile</p>
         <p class="lead rise">AMAYA comprises <strong>9 copper concessions</strong> covering a total area of <strong>2,353 hectares</strong>, equivalent to approximately <strong>5,814 acres</strong>, at 3,800 metres above sea level, 80 km north of Calama.</p>
         <div class="btns rise">
-          <a class="cta solid" href="project.html">Explore the project</a>
-          <a class="cta" href="about.html#contact">Investor enquiries</a>
+          <a class="cta solid" href="project">Explore the project</a>
+          <a class="cta" href="about#contact">Investor enquiries</a>
         </div>
       </div>
       <figure class="scanner rise" aria-label="Illustrative subsurface model of the AMAYA porphyry copper target">
@@ -53,7 +53,7 @@ BODIES['index'] = r'''
         <p class="tag">Overview</p>
         <h2>A copper exploration project in the world&rsquo;s premier copper belt.</h2>
         <p class="body">AMAYA is a copper exploration project located in the Atacama Desert, Chile. The project comprises 9 copper concessions covering a total area of 2,353 hectares &mdash; approximately 5,814 acres &mdash; at 3,800 metres above sea level, 80 km north of the city of Calama in the Antofagasta Region.</p>
-        <p class="body">A first drilling campaign has been completed; its findings are set out on <a href="project.html" style="color:var(--cu-lt);border-bottom:1px solid rgba(240,168,104,.35)">the project page</a>. AMAYA is an exploration-stage project: no mineral resources or mineral reserves have been declared.</p>
+        <p class="body">A first drilling campaign has been completed; its findings are set out on <a href="project" style="color:var(--cu-lt);border-bottom:1px solid rgba(240,168,104,.35)">the project page</a>. AMAYA is an exploration-stage project: no mineral resources or mineral reserves have been declared.</p>
         <figure class="media" style="aspect-ratio:16/10;margin-top:14px">
           <img src="copper-detail.jpg" alt="Detail of raw copper-bearing ore" width="560" height="350" loading="eager" decoding="async">
           <figcaption class="cap">Copper mineralisation</figcaption>
@@ -89,7 +89,7 @@ BODIES['index'] = r'''
         <div>
           <p class="tag">Latest</p>
           <h2 id="h2-latest">From the field.</h2>
-          <p class="body">A short view of current activity on the project. Full exploration detail on <a href="project.html" style="color:var(--cu-lt)">The Project</a>.</p>
+          <p class="body">A short view of current activity on the project. Full exploration detail on <a href="project" style="color:var(--cu-lt)">The Project</a>.</p>
         </div>
       </div>
       <figure class="vfig rise">
@@ -118,7 +118,7 @@ BODIES['index'] = r'''
       <h2 class="rise" id="h2-assets">Two mines, in progress.</h2>
       <p class="sub rise">Alongside the Atacama exploration ground, the company holds two mining assets &mdash; one copper ore, one iron ore. Both are currently in progress.</p>
       <div class="minecards">
-        <a class="minecard rise" href="mines.html#copper">
+        <a class="minecard rise" href="mines#copper">
           <span class="mc-ico" aria-hidden="true">
             <svg viewBox="0 0 48 48" fill="none" stroke="url(#cu)" stroke-width="1.5">
               <path d="M24 6l14 9v18l-14 9-14-9V15l14-9z"/><path d="M24 6v18m0 0l14-9M24 24L10 15m14 9v18"/>
@@ -128,7 +128,7 @@ BODIES['index'] = r'''
           <p>Copper ore mining asset. Site photography, footage and operational detail are published as the company releases them.</p>
           <span class="go">Explore the mine</span>
         </a>
-        <a class="minecard rise" href="mines.html#iron">
+        <a class="minecard rise" href="mines#iron">
           <span class="mc-ico" aria-hidden="true">
             <svg viewBox="0 0 48 48" fill="none" stroke="url(#fe)" stroke-width="1.5">
               <path d="M8 36l10-22 10 14 6-8 6 16z"/><path d="M8 36h32"/>
@@ -150,32 +150,32 @@ BODIES['index'] = r'''
       <h2 class="rise">The company in six parts.</h2>
       <p class="sub rise">Each section stands on its own &mdash; open the one you need.</p>
       <div class="navcards">
-        <a class="navcard rise" href="project.html">
+        <a class="navcard rise" href="project">
           <p class="n">01</p><h3>The Project</h3>
           <p>Full 9-concession breakdown totalling 2,353 hectares, the West Fault setting, and the exploration programme to date.</p>
           <span class="go">Concessions &amp; geology</span>
         </a>
-        <a class="navcard rise" href="mines.html">
+        <a class="navcard rise" href="mines">
           <p class="n">02</p><h3>Our Mines</h3>
           <p>The copper ore mine and the iron ore mine &mdash; galleries, site footage and operational detail.</p>
           <span class="go">Mining operations</span>
         </a>
-        <a class="navcard rise" href="location.html">
+        <a class="navcard rise" href="location">
           <p class="n">03</p><h3>Location &amp; Logistics</h3>
           <p>Distances to Calama Airport and to the Tocopilla, Puerto Angamos and Antofagasta export ports, plus neighbouring producing operations.</p>
           <span class="go">Access &amp; logistics</span>
         </a>
-        <a class="navcard rise" href="market.html">
+        <a class="navcard rise" href="market">
           <p class="n">04</p><h3>Copper Market</h3>
           <p>Current indicative copper reference price per metric tonne, and the demand backdrop.</p>
           <span class="go">Market context</span>
         </a>
-        <a class="navcard rise" href="leadership.html">
+        <a class="navcard rise" href="leadership">
           <p class="n">05</p><h3>Leadership</h3>
           <p>The executive team &mdash; Chief Executive Officer, Managing Director, Chief Financial Officer and Chief Geologist.</p>
           <span class="go">Executive team</span>
         </a>
-        <a class="navcard rise" href="about.html">
+        <a class="navcard rise" href="about">
           <p class="n">06</p><h3>About</h3>
           <p>Our approach to responsible exploration in the high desert, and contact details.</p>
           <span class="go">Approach &amp; contact</span>
@@ -189,7 +189,7 @@ BODIES['project'] = r'''
   <section class="phead">
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb">
-        <a href="index.html">Amaya</a><span>/</span>The Project
+        <a href="./">Amaya</a><span>/</span>The Project
       </nav>
       <p class="eyebrow rise">01 &mdash; The Project</p>
       <h1 class="rise">The Project</h1>
@@ -333,7 +333,7 @@ BODIES['project'] = r'''
 BODIES['mines'] = r'''  <section class="phead">
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb">
-        <a href="index.html">Amaya</a><span>/</span>Our Mines
+        <a href="./">Amaya</a><span>/</span>Our Mines
       </nav>
       <p class="eyebrow rise">02 &mdash; Our Mines</p>
       <h1 class="rise">Our Mines</h1>
@@ -372,7 +372,7 @@ BODIES['mines'] = r'''  <section class="phead">
         <div class="rise">
           <p class="body">The Copper Ore Mine is one of two mining assets held by the company. Work at the site is currently in progress.</p>
           <p class="body">Site photography, footage, location detail and operational information are published on this page as the company releases them. No production figures, grades, resources or reserves have been declared for this asset.</p>
-          <div class="btns"><a class="cta" href="about.html#contact">Enquire about this mine</a></div>
+          <div class="btns"><a class="cta" href="about#contact">Enquire about this mine</a></div>
         </div>
         <dl class="spec rise">
           <div><dt>Asset</dt><dd>Copper Ore Mine</dd></div>
@@ -443,7 +443,7 @@ BODIES['mines'] = r'''  <section class="phead">
         <div class="rise">
           <p class="body">The Iron Ore Mine is the company&rsquo;s second mining asset. Work at the site is currently in progress.</p>
           <p class="body">Site photography, footage, location detail and operational information are published on this page as the company releases them. No production figures, grades, resources or reserves have been declared for this asset.</p>
-          <div class="btns"><a class="cta" href="about.html#contact">Enquire about this mine</a></div>
+          <div class="btns"><a class="cta" href="about#contact">Enquire about this mine</a></div>
         </div>
         <dl class="spec rise">
           <div><dt>Asset</dt><dd>Iron Ore Mine</dd></div>
@@ -501,7 +501,7 @@ BODIES['location'] = r'''
   <section class="phead">
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb">
-        <a href="index.html">Amaya</a><span>/</span>Location &amp; Logistics
+        <a href="./">Amaya</a><span>/</span>Location &amp; Logistics
       </nav>
       <p class="eyebrow rise">02 &mdash; Location &amp; Logistics</p>
       <h1 class="rise">Location &amp; Logistics</h1>
@@ -637,7 +637,7 @@ BODIES['market'] = r'''
   <section class="phead">
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb">
-        <a href="index.html">Amaya</a><span>/</span>Copper Market
+        <a href="./">Amaya</a><span>/</span>Copper Market
       </nav>
       <p class="eyebrow rise">03 &mdash; Copper Market</p>
       <h1 class="rise">Copper Market</h1>
@@ -689,7 +689,7 @@ BODIES['market'] = r'''
 BODIES['leadership'] = r'''  <section class="phead">
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb">
-        <a href="index.html">Amaya</a><span>/</span>Leadership
+        <a href="./">Amaya</a><span>/</span>Leadership
       </nav>
       <p class="eyebrow rise">05 &mdash; Leadership</p>
       <h1 class="rise">Leadership</h1>
@@ -796,7 +796,7 @@ BODIES['leadership'] = r'''  <section class="phead">
       <p class="tag rise">Contact</p>
       <h2 class="rise" id="h2-lcon">Speak with the team.</h2>
       <p class="body rise">Enquiries from investors, operators and partners are welcome.</p>
-      <div class="btns rise"><a class="cta solid" href="about.html#contact">Investor enquiries</a></div>
+      <div class="btns rise"><a class="cta solid" href="about#contact">Investor enquiries</a></div>
     </div>
   </section>
 '''
@@ -805,7 +805,7 @@ BODIES['about'] = r'''
   <section class="phead">
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb">
-        <a href="index.html">Amaya</a><span>/</span>About
+        <a href="./">Amaya</a><span>/</span>About
       </nav>
       <p class="eyebrow rise">04 &mdash; About</p>
       <h1 class="rise">About AMAYA</h1>
@@ -824,7 +824,7 @@ BODIES['about'] = r'''
       <p class="tag rise">Leadership</p>
       <h2 class="rise" id="h2-lead">Led by an experienced executive team.</h2>
       <p class="sub rise">AMAYA is directed by a Chief Executive Officer, Managing Director, Chief Financial Officer and Chief Geologist. Full profiles, experience and areas of expertise are set out on the leadership page.</p>
-      <div class="btns rise"><a class="cta" href="leadership.html">Meet the leadership</a></div>
+      <div class="btns rise"><a class="cta" href="leadership">Meet the leadership</a></div>
     </div>
   </section>
 

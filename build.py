@@ -89,8 +89,13 @@ SVG_DEFS = """<svg width="0" height="0" style="position:absolute" aria-hidden="t
 </svg>"""
 
 
+def href_for(fname):
+    """Clean, extension-less link for a page (GitHub Pages serves x.html at /x)."""
+    return "./" if fname == "index.html" else fname[:-len(".html")]
+
+
 def url_for(fname):
-    return BASE if fname == "index.html" else BASE + fname
+    return BASE if fname == "index.html" else BASE + href_for(fname)
 
 
 def head(key, fname):
@@ -137,11 +142,11 @@ def header(key):
     items = []
     for k, fname, nav_label, _full in NAV:
         cur = ' aria-current="page"' if k == key else ''
-        items.append(f'      <li><a href="{fname}"{cur}>{nav_label.replace("&", "&amp;")}</a></li>')
+        items.append(f'      <li><a href="{href_for(fname)}"{cur}>{nav_label.replace("&", "&amp;")}</a></li>')
     links = "\n".join(items)
     return f"""<header>
   <div class="wrap nav">
-    <a class="brand" href="index.html" aria-label="AMAYA Project — home"><img src="logo.png" alt="AMAYA Project logo" width="110" height="32"><span>Amaya</span></a>
+    <a class="brand" href="./" aria-label="AMAYA Project — home"><img src="logo.png" alt="AMAYA Project logo" width="110" height="32"><span>Amaya</span></a>
     <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open navigation menu">
       <span></span><span></span><span></span>
     </button>
@@ -165,15 +170,15 @@ def pager(key):
     nxt = NAV[(i + 1) % len(NAV)]
     return f"""
 <section style="padding-top:0"><div class="wrap"><div class="pager">
-  <a class="prev" href="{prev[1]}"><small>Previous</small><b>{prev[3]}</b></a>
-  <a class="next" href="{nxt[1]}"><small>Next</small><b>{nxt[3]}</b></a>
+  <a class="prev" href="{href_for(prev[1])}"><small>Previous</small><b>{prev[3]}</b></a>
+  <a class="next" href="{href_for(nxt[1])}"><small>Next</small><b>{nxt[3]}</b></a>
 </div></div></section>
 """
 
 
 def footer():
     links = "\n".join(
-        f'        <a href="{f}">{full.replace("&", "&amp;")}</a>' for _k, f, _lbl, full in NAV
+        f'        <a href="{href_for(f)}">{full.replace("&", "&amp;")}</a>' for _k, f, _lbl, full in NAV
     )
     return f"""</main>
 
@@ -195,7 +200,7 @@ def footer():
 
 def jsonld(key, fname):
     m = META[key]
-    page_id = (BASE + "#webpage") if fname == "index.html" else (BASE + fname + "#webpage")
+    page_id = (BASE + "#webpage") if fname == "index.html" else (url_for(fname) + "#webpage")
     graph = f"""    {{
       "@type": "WebSite",
       "@id": "{BASE}#website",
@@ -237,7 +242,7 @@ def jsonld(key, fname):
         graph += f""",
     {{
       "@type": "BreadcrumbList",
-      "@id": "{BASE}{fname}#breadcrumb",
+      "@id": "{url_for(fname)}#breadcrumb",
       "itemListElement": [
         {{
           "@type": "ListItem",
@@ -249,7 +254,7 @@ def jsonld(key, fname):
           "@type": "ListItem",
           "position": 2,
           "name": "{full}",
-          "item": "{BASE}{fname}"
+          "item": "{url_for(fname)}"
         }}
       ]
     }}"""
